@@ -1,0 +1,32 @@
+{
+  "radar": [
+    { "axis": "Machine Learning", "current": 0.82, "target": 0.95, "descriptor": "Scikit-learn, pandas, Gradient Boosting — R²=0.92 on 700K records" },
+    { "axis": "Backend Dev", "current": 0.88, "target": 0.93, "descriptor": "Node.js, Express.js, Flask, REST APIs, GraphQL" },
+    { "axis": "Frontend Dev", "current": 0.85, "target": 0.90, "descriptor": "React, TypeScript, TailwindCSS, Vite, Framer Motion" },
+    { "axis": "Data Engineering", "current": 0.78, "target": 0.88, "descriptor": "pandas, MongoDB, AWS, Supabase — 700K+ record pipelines" },
+    { "axis": "Cloud & Infra", "current": 0.72, "target": 0.85, "descriptor": "AWS, Azure, Cloudflare R2, Supabase, APScheduler" },
+    { "axis": "AI & Automation", "current": 0.76, "target": 0.92, "descriptor": "Gemini API, Cloud Vision OCR, Remotion, AI pipelines" }
+  ],
+  "groups": [
+    {
+      "label": "Languages",
+      "color": "cyan",
+      "skills": ["Python", "JavaScript", "TypeScript", "C++", "Java", "SQL", "GraphQL", "C", "HTML/CSS"]
+    },
+    {
+      "label": "Frameworks & Libraries",
+      "color": "green",
+      "skills": ["React", "Node.js", "Express.js", "Flask", "REST APIs", "pandas", "Scikit-learn", "Matplotlib", "Chart.js", "Remotion", "Zustand"]
+    },
+    {
+      "label": "Databases & Cloud",
+      "color": "amber",
+      "skills": ["MongoDB", "AWS", "Azure", "Supabase", "Cloudflare"]
+    },
+    {
+      "label": "Developer Tools",
+      "color": "cyan",
+      "skills": ["Git", "VS Code", "Vim", "GNU Debugger", "Eclipse", "APScheduler"]
+    }
+  ]
+}

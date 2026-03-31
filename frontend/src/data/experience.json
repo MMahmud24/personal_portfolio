@@ -1,0 +1,44 @@
+[
+  {
+    "id": "mit",
+    "epoch": 1,
+    "company": "Muslim Interscholastic Tournament",
+    "role": "Software Developer",
+    "location": "New York, NY",
+    "start": "Aug 2025",
+    "end": "Present",
+    "year": 2025.6,
+    "expertiseScore": 78,
+    "type": "Professional",
+    "bullets": [
+      "Maintained and enhanced a production event management platform serving 2,000+ users by refactoring React.js and Node.js components under Agile workflows, improving uptime and responsiveness",
+      "Built a Flask analytics dashboard integrating a GraphQL API to process 1,000+ real-time engagement score records with pandas, giving 20+ schools instant visibility into event performance",
+      "Eliminated API bottlenecks during peak traffic by implementing APScheduler-based caching that refreshes score data every minute, sustaining sub-second page response times during live events"
+    ],
+    "tags": ["React", "Node.js", "Flask", "GraphQL", "pandas", "APScheduler"],
+    "skillsAcquired": 6,
+    "projectsShipped": 3,
+    "impact": "2,000+ users"
+  },
+  {
+    "id": "stackhacks",
+    "epoch": 2,
+    "company": "StackHacks",
+    "role": "Technology Director",
+    "location": "Vestal, NY",
+    "start": "May 2025",
+    "end": "Present",
+    "year": 2025.4,
+    "expertiseScore": 88,
+    "type": "Leadership",
+    "bullets": [
+      "Led end-to-end technical execution of 10+ workshops driving 150+ participant engagements, overseeing speaker coordination, tooling stack selection, and deployment of collaboration platforms",
+      "Built a data-driven engagement metrics system to track attendance trends and session effectiveness, translating insights into iterative strategy that compounded member participation growth by 25%",
+      "Architected and scaled the club's technical infrastructure by establishing a systems-level partnership framework across 10+ student organizations, standardizing integration protocols"
+    ],
+    "tags": ["Leadership", "Data Analytics", "Infrastructure", "Strategy"],
+    "skillsAcquired": 4,
+    "projectsShipped": 10,
+    "impact": "150+ participants"
+  }
+]

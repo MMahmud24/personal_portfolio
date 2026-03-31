@@ -1,0 +1,94 @@
+.training-sidebar {
+  position: fixed;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 100;
+  height: 260px;
+}
+
+@media (max-width: 1024px) {
+  .training-sidebar { display: none; }
+}
+
+.sidebar-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  white-space: nowrap;
+}
+
+.sidebar-track {
+  position: relative;
+  width: 4px;
+  flex: 1;
+  background: var(--border-subtle);
+  border-radius: 2px;
+  overflow: visible;
+}
+
+.sidebar-fill {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  background: var(--accent-cyan);
+  border-radius: 2px;
+  transition: height 0.1s ease;
+}
+
+.sidebar-glow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px; height: 12px;
+  background: var(--accent-cyan);
+  border-radius: 50%;
+  box-shadow: var(--glow-cyan);
+  margin-top: -6px;
+  transition: top 0.1s ease;
+}
+
+.sidebar-milestone {
+  position: absolute;
+  left: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transform: translateY(-50%);
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+
+.sidebar-milestone.reached { opacity: 1; }
+
+.milestone-dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  flex-shrink: 0;
+  transition: background 0.3s;
+}
+
+.sidebar-milestone.reached .milestone-dot {
+  background: var(--accent-cyan);
+  box-shadow: 0 0 6px var(--accent-cyan);
+}
+
+.milestone-label {
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+
+.sidebar-milestone.reached .milestone-label { color: var(--text-secondary); }

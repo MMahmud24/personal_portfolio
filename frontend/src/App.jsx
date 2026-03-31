@@ -1,33 +1,41 @@
-import { useState, useEffect } from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Skills from "./components/Skills";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import "./App.css";
+import './App.css'
+import Navbar    from './components/Navbar/Navbar'
+import Hero      from './components/Hero/Hero'
+import About     from './components/About/About'
+import Experience from './components/Experience/Experience'
+import Projects  from './components/Projects/Projects'
+import Education from './components/Education/Education'
+import Contact   from './components/Contact/Contact'
+import Footer    from './components/Footer/Footer'
+import CustomCursor            from './components/global/CustomCursor'
+import Terminal                from './components/global/Terminal'
+import TrainingProgressSidebar from './components/global/TrainingProgressSidebar'
+import DataStreamDivider       from './components/global/DataStreamDivider'
 
 export default function App() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <div className="app">
-      <Navbar scrolled={scrolled} />
+    <>
+      <CustomCursor />
+      <Terminal />
+      <TrainingProgressSidebar />
+
+      <Navbar />
+
       <main>
         <Hero />
-        <Skills />
+        <DataStreamDivider />
+        <About />
+        <DataStreamDivider reverse />
         <Experience />
+        <DataStreamDivider />
         <Projects />
+        <DataStreamDivider reverse />
+        <Education />
+        <DataStreamDivider />
         <Contact />
       </main>
+
       <Footer />
-    </div>
-  );
+    </>
+  )
 }

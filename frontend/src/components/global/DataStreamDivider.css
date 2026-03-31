@@ -1,0 +1,39 @@
+.stream-divider {
+  height: 40px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, var(--bg-primary), transparent 8%, transparent 92%, var(--bg-primary));
+  position: relative;
+  z-index: 1;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.stream-track {
+  display: flex;
+  gap: 0;
+  white-space: nowrap;
+  animation: streamLeft 22s linear infinite;
+}
+
+.stream-track.reverse {
+  animation: streamRight 22s linear infinite;
+}
+
+.stream-track span {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  opacity: 0.3;
+  letter-spacing: 0.08em;
+  padding-right: 0;
+}
+
+@keyframes streamLeft {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes streamRight {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}

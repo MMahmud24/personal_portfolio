@@ -1,0 +1,20 @@
+[
+  {
+    "id": "binghamton",
+    "source": "Binghamton University",
+    "domain": "Computer Science",
+    "location": "Vestal, NY",
+    "size": "4 years / Expected May 2028",
+    "language": "English",
+    "quality_score": 3.90,
+    "topics": ["Algorithms", "Data Structures", "Machine Learning", "Systems Programming", "Statistics", "Software Engineering"],
+    "license": "B.S. Computer Science",
+    "corpus_summary": [
+      "Core algorithms, data structures, and asymptotic complexity analysis",
+      "Machine learning fundamentals: regression, classification, ensemble methods",
+      "Systems programming in C/C++ — memory management and low-level design",
+      "Full-stack software engineering with modern web frameworks",
+      "Database design, distributed systems, and cloud architecture"
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+/* ─────────────────────────────────────────────
+   NEURAL INTERFACE — Design Tokens
+   ─────────────────────────────────────────────*/
+
+:root {
+  /* Background */
+  --bg-primary:   #0A0F1E;
+  --bg-secondary: #121929;
+  --bg-surface:   #1A2540;
+  --bg-card:      #111827;
+
+  /* Accents */
+  --accent-cyan:  #00D4FF;
+  --accent-green: #00FF9D;
+  --accent-amber: #FFB800;
+  --accent-cyan-dim: rgba(0, 212, 255, 0.15);
+  --accent-green-dim: rgba(0, 255, 157, 0.12);
+
+  /* Text */
+  --text-primary:   #E8F4F5;
+  --text-secondary: #8B9CC8;
+  --text-muted:     #4A5580;
+
+  /* Borders */
+  --border-subtle: #1E2E50;
+  --border-active: #00D4FF;
+
+  /* Typography */
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+
+  /* Spacing (8px grid) */
+  --space-1:  8px;
+  --space-2:  16px;
+  --space-3:  24px;
+  --space-4:  32px;
+  --space-5:  40px;
+  --space-6:  48px;
+  --space-8:  64px;
+  --space-10: 80px;
+  --space-15: 120px;
+
+  /* Layout */
+  --max-w: 1200px;
+  --section-pad: 120px;
+  --radius: 8px;
+  --radius-lg: 14px;
+
+  /* Shadows / Glows */
+  --glow-cyan:  0 0 20px rgba(0, 212, 255, 0.3);
+  --glow-green: 0 0 20px rgba(0, 255, 157, 0.3);
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* ─── Reduced Motion ─── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

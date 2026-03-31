@@ -1,0 +1,172 @@
+.education-section {
+  background: var(--bg-secondary);
+}
+
+.edu-subtitle {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: var(--space-5);
+  margin-top: 6px;
+}
+
+/* ── Dataset card ── */
+.dataset-card {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: var(--space-5);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .dataset-card {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+}
+
+/* Left column */
+.dataset-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.dataset-institution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px; height: 56px;
+  border-radius: var(--radius);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+}
+
+.inst-abbr {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent-cyan);
+}
+
+.dataset-json {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-secondary);
+  background: rgba(0,0,0,0.3);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  overflow-x: auto;
+  line-height: 1.7;
+  white-space: pre;
+}
+
+/* Syntax highlighting in JSON */
+.dataset-json { color: #8B9CC8; }
+
+/* Right column */
+.dataset-right-header {
+  margin-bottom: var(--space-3);
+}
+
+.dataset-name {
+  font-family: var(--font-mono);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.dataset-degree {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent-cyan);
+  display: block;
+  margin-top: 4px;
+}
+
+/* GPA bar */
+.dataset-gpa {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.gpa-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.gpa-value {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent-green);
+  flex-shrink: 0;
+}
+
+.gpa-bar-wrap {
+  flex: 1;
+  height: 4px;
+  background: var(--border-subtle);
+  border-radius: 2px;
+  overflow: hidden;
+  min-width: 80px;
+}
+
+.gpa-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-green));
+  border-radius: 2px;
+}
+
+/* Corpus summary */
+.corpus-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.corpus-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: var(--space-4);
+}
+
+.corpus-list li {
+  font-size: 14px;
+  color: var(--text-secondary);
+  padding-left: var(--space-3);
+  position: relative;
+  line-height: 1.5;
+}
+
+.corpus-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent-cyan);
+  font-size: 10px;
+  top: 3px;
+}
+
+.dataset-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
