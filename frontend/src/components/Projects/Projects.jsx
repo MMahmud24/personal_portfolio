@@ -7,10 +7,10 @@ import './Projects.css'
 
 const TAG_COLORS = { 'AI/ML': 'cyan', 'ML': 'cyan', 'Machine Learning': 'cyan',
   'Full-Stack': 'green', 'Backend': 'green', 'Frontend': 'amber', 'React': 'amber',
-  'Data Engineering': 'green', 'Python': 'cyan', 'TypeScript': 'cyan' }
+  'Data Engineering': 'green', 'Python': 'cyan', 'TypeScript': 'cyan', 'Phaser.js': 'cyan' }
 
-const TASK_TYPES   = ['All', 'NLP', 'Full-Stack']
-const FRAMEWORKS   = ['All', 'Scikit-learn', 'Other']
+const TASK_TYPES   = ['All', 'Machine Learning', 'Full-Stack', 'AI Engineering']
+const FRAMEWORKS   = ['All']
 
 function ModelCard({ project, onOpen }) {
   return (

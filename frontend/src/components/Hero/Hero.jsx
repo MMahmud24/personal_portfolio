@@ -84,9 +84,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.6 }}
           >
-            CS student at Binghamton University (GPA&nbsp;3.90) building full-stack systems and ML pipelines.
-            I ship production-grade software — from event platforms serving 2,000+ users to Gradient Boosting
-            models at R²&nbsp;=&nbsp;0.92.
+            Computer Science student at Binghamton University building full-stack systems and ML pipelines with real-world impact.
           </motion.p>
 
           <motion.div

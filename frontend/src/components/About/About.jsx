@@ -34,7 +34,7 @@ export default function About() {
             <h2 className="section-title">About <span>Me</span></h2>
 
             <p className="about-lead">
-              I'm a CS student at Binghamton University (GPA&nbsp;3.90) who builds at the intersection
+              I'm a Computer Science student at Binghamton University who builds at the intersection
               of software engineering and machine learning.
             </p>
             <p className="about-bio">
@@ -51,9 +51,9 @@ export default function About() {
             {/* Model card aside */}
             <div className="about-model-card">
               <span className="model-card-label">MODEL CARD</span>
-              <div className="model-card-row"><span>Architecture</span><span>Full-Stack + ML Engineer</span></div>
-              <div className="model-card-row"><span>Parameters</span><span>2+ years production experience</span></div>
-              <div className="model-card-row"><span>Fine-tuned on</span><span>NLP, Data Engineering, MLOps</span></div>
+              <div className="model-card-row"><span>Architecture</span><span>Full-Stack + Data Scientist</span></div>
+              <div className="model-card-row"><span>Parameters</span><span>3+ years production experience</span></div>
+              <div className="model-card-row"><span>Fine-tuned on</span><span>Full-Stack Development, Data Engineering, AI Engineering</span></div>
               <div className="model-card-row"><span>Status</span><span className="status-active">● Active</span></div>
             </div>
 
